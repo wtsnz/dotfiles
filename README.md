@@ -11,7 +11,7 @@ When I update my laptop to Yosemite, I created this to help set my computer up a
 
 Thanks to [Sam Soffes](https://github.com/soffes/dotfiles/blob/master/Readme.markdown) I can hide files that I don't want to see in my home directory like so
 
-    SetFile -a "V" ~/Readme.markdown ~/LICENSE ~/Brewfile
+    SetFile -a "V" ~/README.md ~/Brewfile
 
 ### Xcode
 
@@ -21,9 +21,14 @@ Install Xcode using the App Store app.
 
 [Install Homebrew](http://brew.sh) along with my default apps:
 
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew doctor
     cd ~
     brew bundle
+
+### Install oh-my-zsh
+
+    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 ### Ruby 2.1.3
 
