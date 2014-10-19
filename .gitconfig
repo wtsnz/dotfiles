@@ -1,0 +1,16 @@
+[user]
+	name = Will Townsend
+	email = will@townsend.io
+
+[github]
+  user = wtsnz
+
+[core]
+	excludesfile = /Users/will/.gitignore_global
+
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
